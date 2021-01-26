@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Кол-во динамиков"
+        android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vSabwufer"        
+        android:layout_alignBottom="@id/eSabwufer"
+        
+       />
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/eSabwufer"
+        android:layout_toRightOf="@id/vSabwufer"
+        android:background="@android:drawable/editbox_background_normal"
+        android:inputType="none|numberDecimal"
+        android:text="1" 
+        
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vArea"
+        
+        android:text="S динамика"
+        android:textSize="16dp"
+        android:layout_alignBottom="@id/eArea"
+        
+        />
+
+    <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:id="@+id/eArea"
+        android:layout_below="@id/eSabwufer"
+        android:layout_toRightOf="@id/vArea"
+         android:background="@android:drawable/editbox_background_normal"
+        android:inputType="none|numberDecimal"
+        android:text="1" 
+        />
+    
+    <TextView
+        
+        android:text="Частота, Гц"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Herz"
+        android:textSize="16dp" 
+        android:layout_alignBottom="@id/HZ"
+       
+  
+        
+    />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/Herz"
+        android:inputType="none|number"
+        android:id="@+id/HZ"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_below="@id/eArea"
+        android:text="33" 
+    />
+
+    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        android:text="Объем, Л."
+        android:id="@+id/Volume"
+        android:textSize="16dp"
+        
+        android:layout_alignBottom="@id/vText"
+            
+    />
+    <EditText
+        android:id="@+id/vText"
+        android:background="@android:drawable/editbox_background_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/HZ"
+        android:layout_toRightOf="@id/Volume"
+        android:inputType="none|number"
+        android:text="35" 
+       
+      
+    />
+    <TextView
+        android:text="Площадь Порта: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vText"
+        android:id="@+id/sView"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/seView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@id/sView"
+        android:layout_below="@id/vText"        
+        />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sView"
+        android:id="@+id/sBar"
+        android:max="900"
+        android:progress="450" 
+        />
+    <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+        android:text="Длина порта: "
+        android:layout_below="@id/sBar"
+        android:id="@+id/vLength"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/seLength"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_toRightOf="@id/vLength"
+        android:layout_below="@id/sBar"
+     
+        
+        />
+     <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vLength"
+        android:id="@+id/vBar"
+        />
+</RelativeLayout>
